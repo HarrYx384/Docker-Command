@@ -1,6 +1,6 @@
 pipeline{
   environment{
-  properties([parameters([choice(choices: ['main', 'master', 'feature'], name: 'BRANCH')])])
+  properties([parameters([choice(choices: ['main', 'check', 'master'], name: 'BRANCH')])])
   }
 agent any
   stages{
